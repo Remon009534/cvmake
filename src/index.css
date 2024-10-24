@@ -1,0 +1,327 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::selection
+{
+  background-color: #213547;
+  color: #747bff;
+}
+html
+{
+  scroll-behavior: smooth;
+}
+header
+{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.link ul
+{
+  display: flex;
+  column-gap: 50px;
+}
+li
+{
+  list-style: none;
+}
+a
+{
+  text-decoration: none;
+  color: #213547;
+  font-size: 20px;
+}
+.button #btn
+{
+  height: 50px;
+  width: 130px;
+  border-radius: 20px;
+  background: transparent;
+  color: #242424;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+}
+.button #btn:hover
+{
+  background-color: #242424;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+.center
+{
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.center #title
+{
+  width: 700px;
+  display: grid;
+  row-gap: 10px;
+}
+.center #title h1 
+{
+  font-size: 70px;
+}
+.center #title .button2 #btn
+{
+  height: 50px;
+  width: 220px;
+  border: none;
+  background-color: #747bff;
+  color: white;
+  font-size: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.center #title .button2 #btn:hover
+{
+  cursor: pointer;
+  border-radius: 50px;
+  background-color: #213547;
+  transition: all 0.2s ease-in;
+}
+.center #image
+{
+  height: 500px;
+  width: 450px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-image: url('../src/assets/vecteezy_close-up-of-hands-typing-on-a-keyboard_29846761.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 8px 8px 0px #747bff;
+}
+.about
+{
+  height: 400px;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  row-gap: 50px;
+}
+.about #que h1
+{
+  font-size: 50px;
+}
+#list
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.about #item
+{
+  height: 200px;
+  width: 300px;
+  border-radius: 20px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.about #item:hover
+{
+  background-color: #747bff;
+  box-shadow: 8px 8px 0px #242424;
+  transition: all 0.2s ease-in-out;
+}
+[data-tab-content]
+{
+  display: none;
+}
+.active[data-tab-content]
+{
+  display: block;
+}
+#main2
+{
+  background-color: #213547;
+  height: 700px;
+}
+#fill
+{
+  display: grid;
+  width: 400px;
+  border-radius: 20px;
+  max-height: 500px;
+  overflow: scroll;
+  background-color: #747bff;
+}
+#fill #personal
+{
+  padding: 10px;
+  display: grid;
+  row-gap: 10px;
+}
+#fill #education
+{
+  padding: 10px;
+  display: grid;
+  row-gap: 10px;
+}
+#fill #skills
+{
+  padding: 10px;
+  display: grid;
+  row-gap: 10px;
+}
+#fill #experience
+{
+  padding: 10px;
+  display: grid;
+  row-gap: 10px;
+}
+#fill #personal form
+{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+}
+#fill #skills form
+{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+}
+#fill #education form
+{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+}
+#fill #experience form
+{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+}
+#main2 #cv
+{
+  min-height: 200px;
+  width: 550px;
+  background-color: white;
+}
+.main2
+{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.main2 #button #btn6
+{
+  background: transparent;
+  color: #213547;
+  height: 40px;
+  width: 80px;
+  border: none;
+  border-radius: 20px;
+}
+.main2 #button #btn6:hover
+{
+  background-color: #213547;
+  color: #747bff;
+  transition: all 0.2s ease-in-out;
+}
+.main2 #button
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+dialog
+{
+  inset: 0.5rem;
+  height: 200px;
+  margin: auto;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 300px;
+  box-shadow: 5px 5px 0px black;
+}
+dialog form input
+{
+  width: 100px;
+  height: 30px;
+}
+#title ul
+{
+  display: flex;
+  column-gap: 20px;
+  font-size: 12px;
+}
+#cv #summary
+{
+  padding: 20px;
+}
+input
+{
+  height: 40px;
+  width: 300px;
+}
+#cv #edu ul
+{
+  text-indent: 20px;
+}
+#cv #exp ul
+{
+  text-indent: 20px;
+}
+#cv #skill ul
+{
+  text-indent: 20px;
+}
+#main2 #btn
+{
+  height: 40px;
+  width: 80px;
+  color: #747bff;
+  border: none;
+  background: transparent;
+}
+#main2 #btn:hover
+{
+  background-color: #747bff;
+  color: #242424;
+  border-radius: 20px;
+  transition: all 0.2s ease-in-out;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
