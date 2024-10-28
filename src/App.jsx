@@ -57,7 +57,7 @@ function App() {
   const [tool, setTool] = useState("");
   return (
     <>
-    <section id='main' data-tab-content className='active'>
+    <section id='main' data-tab-content>
       <div className='title'>
         <header>
           <div className='logo'>
@@ -106,7 +106,7 @@ function App() {
         </div>
       </div>
     </section>
-    <section id='main2' data-tab-content>
+    <section id='main2' data-tab-content className="active">
       <button data-tab-target="#main" id='btn'>back</button>
       <div className='main2'>
         <div id='fill'>
